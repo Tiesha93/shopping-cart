@@ -5,8 +5,10 @@ import ProductCard from "../Components/ProductCard";
 
 function Cameras (){
     return(
-        <div className="Cameras bg-dark">
+        <div className="container d-md-flex">
+        <div className="Cameras">
              {product.map((product)=>(<ProductCard key={product.id} product={product}/>))}
+        </div>
         </div>
     )
 }

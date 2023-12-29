@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+/* import { Container } from "react-bootstrap"; */
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { useContext } from "react";
 import CartContext from "../context/cart/CartContext";
@@ -11,11 +11,11 @@ function CheckOut(){
   const { showCloseCart,showCart, cartItems} = useContext(CartContext);
     let amount = cartItems.reduce((amount, item) => item.price + amount, 0);
     return(
-        <Container>
+        <div className="container">
             {showCart && (
-          <div className="cart__wrapper">
+          <div className="cart__wrapper d-flex justify-content-center" style={{width: "50vw"}}>
             <div style={{ textAlign: "right" }}>
-            <IoMdCloseCircleOutline onClick={showCloseCart}></IoMdCloseCircleOutline>
+            <IoMdCloseCircleOutline onClick={showCloseCart} style={{cursor: "pointor", background:"gray"}}></IoMdCloseCircleOutline>
             </div>
             <div className='cart__innerWrapper'>
               {cartItems.length === 0 ? (
@@ -38,7 +38,7 @@ function CheckOut(){
             </div>
           </div>
         )}
-        </Container>
+        </div>
     )
 }
 export default CheckOut;
