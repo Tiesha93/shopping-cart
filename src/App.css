@@ -3,13 +3,14 @@
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  background-size: auto;
+  background-size: 100% 100%;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 
 .navbar-brand {
-  font-family: cursive;
+  font-family: Cursive !important;
   font-size: 30px !important;
   color: whitesmoke !important;
   text-shadow: 2px 0px black;
@@ -65,27 +66,18 @@
 
 
 .quote {
-  font-size: 35px;
+  font-family: playfair display, serif;
+  font-weight: 800;
+  font-size: 25px;
   color: #bfb4d4;
   text-shadow: 2px 0px black;
-  padding-top: 13rem !important;
-  padding-right: 5rem !important;
+  padding-top: 9rem !important;
+  padding-right: 15rem !important;
 }
 
 
-.ProductCard {
-  border-radius: 12px;
-  word-wrap: break-word;
-  margin-bottom: 100px;
-  box-shadow: 0px 2px 6px 0px rgb(33, 25, 30);
-}
-
-
-.ProductCard2 {
-  border-radius: 12px;
-  word-wrap: break-word;
-  margin-bottom: 100px;
-  box-shadow: 0px 2px 6px 0px rgb(33, 25, 30);
+.blockquote>p {
+  font-size: 30px;
 }
 
 
@@ -103,7 +95,6 @@
   margin-top: 100px;
   margin-left: 300px;
   width: 50vw;
-  /* margin: auto !important; */
 }
 
 
@@ -140,13 +131,19 @@ li {
 }
 
 
-/* .footer {
-  background-color: #491651;
-} */
+.footer {
+  padding: 30px !important;
+}
 
 
-/* @media only screen and( max-width:600px ) {
-  .item__count{
-    background-position: 20% 30%;
+.footer>a {
+  padding-bottom: 20px;
+  color: #a22e76;
+}
+
+
+@media (max-width: 540px) {
+  .Cameras {
+    padding-top: 25%;
   }
-} */
+}

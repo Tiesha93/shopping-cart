@@ -6,7 +6,7 @@ function CartItem({ item }) {
 
   return (
     <li className="CartItem__item">
-      <img src={item.image} alt="" />
+      <img src={item.image} class="img-fluid" alt="" />
       <div className="d-flex justify-content-center">
         {item.name} {"$" + item.price}
       </div>

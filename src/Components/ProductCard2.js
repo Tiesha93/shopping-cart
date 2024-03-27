@@ -5,8 +5,11 @@ import { Card, Button } from "react-bootstrap";
 function ProductCard2({ product }) {
   const { addToCart } = useContext(CartContext);
   return (
-    <div className="ProductCard2 d-inline-flex ms-4 pb-4">
-      <Card style={{ width: "25rem" }}>
+    <div className="Container d-flex justify-content-center m-auto">
+      <Card
+        className="shadow-lg p-3 mb-5 bg-body rounded"
+        style={{ width: "25rem" }}
+      >
         <Card.Img style={{ width: "100%" }} variant="top" src={product.image} />
         <Card.Body>
           <Card.Title className="text-dark d-flex justify-content-center fw-bold">

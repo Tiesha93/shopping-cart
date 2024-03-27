@@ -6,18 +6,19 @@ import CartItem from "../Components/CartItem";
 
 function CheckOut() {
   const { showCloseCart, showCart, cartItems } = useContext(CartContext);
-  let amount = cartItems.reduce(
-    (amount, item) => item.price * item.quantity + amount,
-    0
-  );
+  let amount = cartItems
+    .reduce((amount, item) => item.price * item.quantity + amount, 0)
+    .toFixed(2)
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   return (
     <Container>
       {showCart && (
-        <div className="cart__wrapper">
+        <Container className="cart__wrapper">
           <div style={{ textAlign: "right" }}>
             <IoMdCloseCircleOutline
               onClick={showCloseCart}
-              style={{ cursor: "pointor", background: "gray" }}
+              style={{ cursor: "pointer" }}
             ></IoMdCloseCircleOutline>
           </div>
           <div className="cart__innerWrapper d-flex justify-content-center">
@@ -37,7 +38,7 @@ function CheckOut() {
               {"$" + amount}
             </div>
           </div>
-        </div>
+        </Container>
       )}
     </Container>
   );
