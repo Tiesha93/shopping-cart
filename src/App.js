@@ -21,7 +21,7 @@ function App() {
             style={{ opacity: 0.8 }}
           >
             <Container>
-              <Navbar.Brand className="fw-bold" href="/">
+              <Navbar.Brand className="fw-bold" as={Link} to="/">
                 Shopping Cart
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
