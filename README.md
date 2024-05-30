@@ -1,6 +1,6 @@
 # ShoppingCart
 
-Shopping-Cart is an Ecommerce website built with React. You can access the page by visiting the following link: [Live Demo](https://Tiesha93.github.io/shopping-cart)
+Shopping-Cart is an Ecommerce website built with React. You can access the page by visiting the following link: [Live Demo](https://tiesha93.github.io/shopping-cart/)
 
 ## Technologies Used
 
