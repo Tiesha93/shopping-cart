@@ -13,7 +13,7 @@ function App() {
   const { cartItems, showCloseCart } = useContext(CartContext);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/shopping-cart">
       <div className="App">
         <>
           <Navbar
